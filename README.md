@@ -15,6 +15,6 @@ In order for this to work, you must change your .htaccess file to read like so:
 Options -MultiViews
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [QSA,L]
+RewriteRule ^ index.php [QSA,L] '''
 
 where index.php is where you define your routes.
