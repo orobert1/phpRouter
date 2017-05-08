@@ -16,6 +16,5 @@ Options -MultiViews
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
-'''
 
 where index.php is where you define your routes.
