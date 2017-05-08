@@ -12,8 +12,11 @@ A method that allows you to define the action of any specific routes. This inclu
 In order for this to work, you must change your .htaccess file to read like so:
 
 `Options -MultiViews
+<br>
 RewriteEngine On
+<br>
 RewriteCond %{REQUEST_FILENAME} !-f
+<br>
 RewriteRule ^ index.php [QSA,L]`
 
 where index.php is where you define your routes.
